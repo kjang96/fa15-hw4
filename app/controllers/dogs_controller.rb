@@ -1,5 +1,6 @@
 class DogsController < ApplicationController
 	def index
+		@dogs = Dog.all 
 	end
 
 	def create
@@ -14,6 +15,6 @@ class DogsController < ApplicationController
 	end
 
 	def new 
-		redirect_to :action => "create"
+		#redirect_to :action => "create"
 	end
 end

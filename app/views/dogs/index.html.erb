@@ -1,15 +1,6 @@
-<%= form_for :dogs do |f| %>
-  <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </p>
- 
-  <p>
-    <%= f.label :age %><br>
-    <%= f.text_field :age %>
-  </p>
- 
-  <p>
-    <%= f.submit %>
-  </p>
+<h1> DOGEEEE </h1>
+<% @dogs.each do |x| %>
+  <p> Name: <%= x.name %> Age: <%= x.age %> </p>
 <% end %>
+
+<%= link_to "Create a new dog", new_dog_path %>

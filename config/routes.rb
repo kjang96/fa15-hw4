@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
 
+  post "dogs/new", to: "dogs#create"
   resources :dogs	
-  root 'testing#someaction'
-  get 'testing/someaction'
 
   get "users", to: "users#index"
   get "users/new", to: "users#new"
